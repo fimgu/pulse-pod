@@ -67,10 +67,18 @@ const ppg = (x) => { const b = ((x % 1) + 1) % 1; return Math.exp(-((b - 0.12) *
   requestAnimationFrame(tick);
 })(last);
 
-// signup (local until a mail backend is chosen)
+// signup -> Google Form (responses land in the form's linked Google Sheet).
+// Fill these two from the form's pre-filled link: .../d/e/<FORM_ID>/viewform?usp=pp_url&entry.<ENTRY>=x
+const GFORM_ID = '1FAIpQLSfXWw_ZyfyZxPKL6ft2wE6PD2vzVEh6TJHZS9rDLTCEPTG7uw';
+const GFORM_ENTRY = '1166445954';
 $('#joinForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const v = $('#email').value.trim(); if (!v) return;
+  if (GFORM_ID && GFORM_ENTRY) {
+    const body = new URLSearchParams({ [`entry.${GFORM_ENTRY}`]: v });
+    // no-cors: Google doesn't send CORS headers, so the response is opaque, but the row is recorded
+    fetch(`https://docs.google.com/forms/d/e/${GFORM_ID}/formResponse`, { method: 'POST', mode: 'no-cors', body }).catch(() => {});
+  }
   try { const l = JSON.parse(localStorage.getItem('pp_join') || '[]'); l.push({ v, t: Date.now() }); localStorage.setItem('pp_join', JSON.stringify(l)); } catch {}
   $('#joinMsg').textContent = "Thanks. You're on the list."; $('#email').value = '';
 });
