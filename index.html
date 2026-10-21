@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pulse Pod · Keep your watch. Lose the band.</title>
+<meta name="description" content="Pulse Pod is a thin, sealed disc that sits under the watch you already wear and tracks your heart rate, movement and skin temperature. One wrist, not two.">
+<meta property="og:title" content="Pulse Pod · Keep your watch. Lose the band.">
+<meta property="og:description" content="A thin, sealed health sensor that hides under the watch you already love.">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="theme-color" content="#060607">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="preload" as="image" href="img/hero.jpg">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="mark"></span>Pulse Pod</a>
+  <nav>
+    <a href="#why">Why</a><a href="#inside">Inside</a><a href="#charge">Charging</a><a href="#specs">At a glance</a><a href="#faq">Questions</a>
+  </nav>
+  <a class="btn btn-sm btn-light" href="#join">Get updates</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-img"><img src="img/hero.jpg" alt="Pulse Pod, a thin black ceramic disc with a dark sensor window and two small gold charging contacts" fetchpriority="high"></div>
+    <div class="hero-copy">
+      <a class="pill" href="#progress"><span class="dot live"></span>In development · prototypes incoming</a>
+      <h1>Keep your watch.<br><span class="grad">Lose the band.</span></h1>
+      <p class="lede">Pulse Pod is a thin, sealed disc that sits under the watch you already wear. It tracks your heart rate, movement and skin temperature, so the fitness band on your other wrist can go back in the drawer.</p>
+      <div class="cta-row">
+        <a class="btn btn-light" href="#join">Get updates</a>
+        <a class="btn btn-ghost" href="#why">How it works <span class="arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><b>2.67<small> mm</small></b><span>thin, like three credit cards</span></div>
+    <div class="stat"><b>3<small> days</small></b><span>per charge</span></div>
+    <div class="stat"><b>15<small> min</small></b><span>from 0 to 80% charged</span></div>
+    <div class="stat"><b>0</b><span>buttons, ports or screens</span></div>
+  </section>
+
+  <!-- WHY -->
+  <section class="block why" id="why">
+    <p class="eyebrow center">Why Pulse Pod</p>
+    <h2 class="center">One wrist. Not two.</h2>
+    <p class="sub center">You wear a watch you're proud of. You also want to know how your heart is doing and how hard you're training. Until now that meant a rubber fitness band on your other wrist.</p>
+    <div class="vs">
+      <div class="vs-card before">
+        <span class="tag">Today</span>
+        <ul>
+          <li><i class="x"></i>A fine watch on one wrist, a fitness band on the other</li>
+          <li><i class="x"></i>A rubber strap that clashes with a suit</li>
+          <li><i class="x"></i>Everyone can see you're wearing a tracker</li>
+        </ul>
+      </div>
+      <div class="vs-card after">
+        <span class="tag">With Pulse Pod</span>
+        <ul>
+          <li><i class="ok"></i>Just your watch, on one wrist</li>
+          <li><i class="ok"></i>Nothing extra to see, at dinner or in the boardroom</li>
+          <li><i class="ok"></i>Heart rate and activity, tracked out of sight</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNDER THE WATCH -->
+  <section class="feature">
+    <figure class="shot"><img src="img/watch.jpg" alt="Pulse Pod seated on the back of a steel watch case" loading="lazy"></figure>
+    <div class="copy">
+      <p class="eyebrow">Hidden</p>
+      <h2>It lives on the back<br>of your watch.</h2>
+      <p>Pulse Pod sits between your watch and your wrist, where nobody looks. From the front, your watch looks exactly the way it always has.</p>
+    </div>
+  </section>
+
+  <!-- THIN -->
+  <section class="feature flip">
+    <figure class="shot"><img src="img/profile.jpg" alt="Pulse Pod seen from the side, showing how thin it is" loading="lazy"><span class="vdim" aria-hidden="true"><i></i><b>2.67 mm</b></span></figure>
+    <div class="copy">
+      <p class="eyebrow">Thin</p>
+      <h2>You won't feel it.</h2>
+      <p>At 2.67 mm, three credit cards stacked, Pulse Pod adds almost nothing to your watch. The skin side is smooth, rounded ceramic, so it's comfortable all day.</p>
+    </div>
+  </section>
+
+  <!-- INSIDE: scroll-scrubbed explode -->
+  <section class="scrub" id="inside">
+    <div class="scrub-sticky">
+      <canvas id="explode" width="1400" height="1400" aria-label="Pulse Pod coming apart to show the layers inside"></canvas>
+      <div class="scrub-copy">
+        <p class="eyebrow">Inside</p>
+        <h2>A whole fitness tracker,<br>in a coin.</h2>
+        <p>A heart sensor, a motion sensor, a thermometer, a battery and a Bluetooth radio, all sealed into one thin disc. Keep scrolling and watch it come together.</p>
+        <ol class="layers" id="layers">
+          <li>Smooth ceramic shell, against your skin</li>
+          <li>Heart-rate sensor</li>
+          <li>Brains and Bluetooth radio</li>
+          <li>Rechargeable battery</li>
+          <li>Sealed back, against your watch</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEART RATE -->
+  <section class="feature">
+    <figure class="shot"><img src="img/glow.jpg" alt="Close-up of the sensor window with two green lights glowing" loading="lazy"></figure>
+    <div class="copy">
+      <p class="eyebrow">Heart rate</p>
+      <h2>A little green light.<br>Every heartbeat.</h2>
+      <p>Pulse Pod shines a soft green light into your skin. With every heartbeat a little more blood passes under it, and a little less light bounces back. Pulse Pod counts those tiny changes. It's the same method the big fitness bands use.</p>
+      <div class="ecg"><svg viewBox="0 0 400 60" preserveAspectRatio="none"><path id="ecgPath" d=""/></svg><span class="bpm"><b id="bpm">68</b> bpm</span></div>
+    </div>
+  </section>
+
+  <!-- APP -->
+  <section class="feature flip app" id="app">
+    <figure class="phone-wrap" aria-label="The Pulse Pod phone app">
+      <div class="phone">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="status"><span>7:42</span><span class="sig"></span></div>
+          <p class="app-day">Good morning, Erik</p>
+          <div class="ring-wrap">
+            <svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" class="track"/><circle cx="60" cy="60" r="52" class="fill" pathLength="100"/></svg>
+            <div class="ring-num"><b>86</b><span>Recovery</span></div>
+          </div>
+          <p class="ring-note">Well rested. A good day to train hard.</p>
+          <div class="tiles">
+            <div class="tile"><span>Resting HR</span><b>52<small> bpm</small></b></div>
+            <div class="tile"><span>HRV</span><b>64<small> ms</small></b></div>
+            <div class="tile"><span>Sleep</span><b>7h 38m</b></div>
+            <div class="tile"><span>Skin temp</span><b>+0.1<small>°</small></b></div>
+          </div>
+          <div class="alert"><i></i><div><b>Health watch</b><span>All normal. We'll tell you if your body shows early signs of getting sick.</span></div></div>
+          <div class="week"><span>Recovery, last 7 days</span><div class="bars"><i style="--h:58%"></i><i style="--h:71%"></i><i style="--h:44%"></i><i style="--h:66%"></i><i style="--h:79%"></i><i style="--h:62%"></i><i class="on" style="--h:86%"></i></div></div>
+          <div class="tabbar"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </figure>
+    <div class="copy">
+      <p class="eyebrow">The app</p>
+      <h2>It measures<br>everything.</h2>
+      <p>Heart rate, heart-rate variability, sleep, recovery, strain, breathing, skin temperature and steps, around the clock. Each morning you get one simple score and a plain-English tip for the day.</p>
+      <p>It also learns what normal looks like for you. When your resting heart rate creeps up and your temperature rises, Pulse Pod warns you that you're coming down with something, often before you feel it.</p>
+      <div class="import">
+        <span class="k">Bring your history</span>
+        <p>Switching from Whoop, Oura, Garmin, Fitbit or Apple Health? Import your data and carry on right where you left off. Your trends, your baselines, years of sleep, all there from day one.</p>
+        <div class="chips"><span>Whoop</span><span>Oura</span><span>Garmin</span><span>Fitbit</span><span>Apple Health</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEALED -->
+  <section class="feature flip" id="sealed">
+    <figure class="shot"><img src="img/skin.jpg" alt="The skin side of Pulse Pod: smooth black ceramic, a sensor window and two flush gold contacts" loading="lazy"></figure>
+    <div class="copy">
+      <p class="eyebrow">Sealed</p>
+      <h2>No ports. No buttons.<br>Nothing to break.</h2>
+      <p>Pulse Pod is sealed shut at the factory. There's nothing to open, press or plug in. All you'll see is a small window for the light and two gold dots it charges through.</p>
+    </div>
+  </section>
+
+  <!-- CHARGING -->
+  <section class="feature" id="charge">
+    <figure class="shot"><img src="img/dock.jpg" alt="Pulse Pod resting in its round charging dock, a soft green ring glowing around it" loading="lazy"></figure>
+    <div class="copy">
+      <p class="eyebrow">Charging</p>
+      <h2>Drop it in.<br>It clicks into place.</h2>
+      <p>Take Pulse Pod off your watch and drop it on its dock. Magnets pull it into place, and it only fits one way, so you can't get it wrong. Fifteen minutes gets you from empty to 80%, so a shower is all it takes.</p>
+      <p class="fine">Software updates arrive by themselves, over Bluetooth.</p>
+    </div>
+  </section>
+
+  <!-- AT A GLANCE -->
+  <section class="block specs" id="specs">
+    <p class="eyebrow center">At a glance</p>
+    <h2 class="center">Everything you need to know.</h2>
+    <div class="grid">
+      <div class="card"><span class="k">Battery</span><b>3 days</b><p>Per charge, with heart rate on all day.</p></div>
+      <div class="card"><span class="k">Charging</span><b>0–80% in 15 min</b><p>On the magnetic dock.</p></div>
+      <div class="card"><span class="k">Tracks</span><b>Heart rate</b><p>All day, from the green light sensor.</p></div>
+      <div class="card"><span class="k">Also tracks</span><b>Sleep, HRV & more</b><p>Recovery, strain, breathing, skin temperature and steps.</p></div>
+      <div class="card"><span class="k">Size</span><b>30 × 2.67 mm</b><p>The size of a large coin.</p></div>
+      <div class="card"><span class="k">Phone</span><b>iPhone & Android</b><p>Import your history from Whoop, Oura, Garmin and more.</p></div>
+      <div class="card"><span class="k">Buttons</span><b>None</b><p>No screen, no buttons, nothing to fiddle with.</p></div>
+      <div class="card"><span class="k">Updates</span><b>Automatic</b><p>New features arrive wirelessly.</p></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block faq" id="faq">
+    <p class="eyebrow center">Questions</p>
+    <h2 class="center">Fair questions.</h2>
+    <div class="qa">
+      <details open><summary>Will it fit my watch?</summary><p>Pulse Pod is 30 mm across, which suits most men's watches. How it attaches to the back of your watch is still being designed. The goal is no tools and no marks on your watch.</p></details>
+      <details><summary>Does it change or damage my watch?</summary><p>No. Nothing is opened, drilled or glued. Your watch works exactly as before, and you can take Pulse Pod off any time.</p></details>
+      <details><summary>Do I have to charge my watch now?</summary><p>No. Your watch stays exactly as it is. Only Pulse Pod needs charging, and 15 minutes on its dock gets it to 80%.</p></details>
+      <details><summary>I already use Whoop or Oura. Do I lose my history?</summary><p>No. Import your data from Whoop, Oura, Garmin, Fitbit or Apple Health and Pulse Pod picks up right where you left off.</p></details>
+      <details><summary>Can I see my numbers?</summary><p>Yes, in the Pulse Pod app on your phone: recovery, sleep, heart rate, strain and early warnings when you might be getting sick.</p></details>
+      <details><summary>When can I buy one?</summary><p>Not yet. The design is done and prototypes are incoming. Join the list and you'll hear first.</p></details>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section class="block progress" id="progress">
+    <p class="eyebrow center">Built in the open</p>
+    <h2 class="center">Where it is today.</h2>
+    <ol class="timeline">
+      <li class="done"><span class="when">Done</span><b>Parts chosen</b><p>Battery, sensors and radio picked and checked.</p></li>
+      <li class="done"><span class="when">Done</span><b>Circuit board designed</b><p>The tiny board inside Pulse Pod is fully drawn and checked.</p></li>
+      <li class="done"><span class="when">Done</span><b>Case and charger designed</b><p>Sealed case, gold charging dots and the magnetic dock all fit together.</p></li>
+      <li class="now"><span class="when">Next</span><b>First prototypes</b><p>Build the first units and test heart rate, battery life and water sealing.</p></li>
+      <li><span class="when">Later</span><b>Watch fitting and phone app</b><p>The clip for your watch and the app for your phone.</p></li>
+    </ol>
+  </section>
+
+  <!-- CTA -->
+  <section class="block cta" id="join">
+    <figure class="cta-img"><img src="img/lid.jpg" alt="" loading="lazy"></figure>
+    <h2>Be the first to know.</h2>
+    <p>An occasional email when Pulse Pod takes a step forward. No spam, ever.</p>
+    <form class="join" id="joinForm">
+      <input type="email" id="email" placeholder="you@email.com" required autocomplete="email" aria-label="Email address">
+      <button class="btn btn-light" type="submit">Notify me</button>
+    </form>
+    <p class="fine" id="joinMsg"></p>
+  </section>
+</main>
+
+<footer>
+  <span><span class="mark"></span>Pulse Pod · designed by <a href="https://gunnarsson.dev">Filip Gunnarsson</a></span>
+  <span class="fine">Prototype in development. Images are rendered from the real design files. Details may change.</span>
+</footer>
+
+<script type="module" src="site.js"></script>
+</body>
+</html>
